@@ -1,9 +1,9 @@
 {
   "references": [
-    {"path": "./address-converter/tsconfig.json"},
-    {"path": "./eip712/tsconfig.json"},
-    {"path": "./proto/tsconfig.json"},
-    {"path": "./provider/tsconfig.json"},
-    {"path": "./transactions/tsconfig.json"},
+    {"path": "./src/address-converter/tsconfig.json"},
+    {"path": "./src/eip712/tsconfig.json"},
+    {"path": "./src/proto/tsconfig.json"},
+    {"path": "./src/provider/tsconfig.json"},
+    {"path": "./src/transactions/tsconfig.json"}
   ]
 }
