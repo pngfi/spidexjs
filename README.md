@@ -1,7 +1,7 @@
 # spidexjs
 spidexjs
 
-JS and TS libs for Evmos
+JS and TS libs for spidex
 
 ## Example
 
