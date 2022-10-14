@@ -1,4 +1,4 @@
-import { createWeb3Extension } from './../../../proto'
+import { createWeb3Extension } from '../../../proto'
 import { Chain, Sender } from './common'
 
 export function signatureToWeb3Extension(

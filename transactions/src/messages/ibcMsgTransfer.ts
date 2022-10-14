@@ -1,7 +1,7 @@
 import {
   createIBCMsgTransfer as protoCreateIBCMsgTransfer,
   createTransaction,
-} from './../../../proto'
+} from '../../../proto'
 
 import {
   createEIP712,
@@ -10,7 +10,7 @@ import {
   generateTypes,
   createIBCMsgTransfer,
   IBC_MSG_TRANSFER_TYPES,
-} from './../../../eip712'
+} from '../../../eip712'
 
 import { Chain, Fee, Sender } from './common'
 

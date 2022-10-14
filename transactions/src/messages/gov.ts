@@ -1,7 +1,7 @@
 import {
   createMsgVote as protoCreateMsgVote,
   createTransaction,
-} from './../../../proto'
+} from '../../../proto'
 
 import {
   createEIP712,
@@ -10,7 +10,7 @@ import {
   generateTypes,
   createMsgVote,
   MSG_VOTE_TYPES,
-} from './../../../eip712'
+} from '../../../eip712'
 
 import { Chain, Fee, Sender } from './common'
 

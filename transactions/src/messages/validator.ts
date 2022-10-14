@@ -2,7 +2,7 @@ import {
   createMsgEditValidator as protoMsgEditValidator,
   createMsgSetWithdrawAddress as protoMsgSetWithdrawAddress,
   createTransaction,
-} from './../../../proto'
+} from '../../../proto'
 
 import {
   createEIP712,
@@ -13,7 +13,7 @@ import {
   createMsgEditValidator,
   MSG_SET_WITHDRAW_ADDRESS_TYPES,
   createMsgSetWithdrawAddress,
-} from './../../../eip712'
+} from '../../../eip712'
 
 import { Chain, Fee, Sender } from './common'
 

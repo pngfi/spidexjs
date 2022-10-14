@@ -3,7 +3,7 @@ import {
   createAnyMessage,
   protoTxNamespace,
   MessageGenerated,
-} from './../../../proto'
+} from '../../../proto'
 
 export function createTxRawEIP712(
   body: protoTxNamespace.txn.TxBody,

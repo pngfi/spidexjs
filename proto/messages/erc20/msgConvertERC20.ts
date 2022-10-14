@@ -1,4 +1,4 @@
-import * as erc20 from './../../proto/spidex/erc20/v1/tx'
+import * as erc20 from '../../proto/spidex/erc20/v1/tx'
 
 export function createMsgConvertERC20(
   contractAddress: string,

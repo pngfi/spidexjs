@@ -1,31 +1,42 @@
-.venv
-node_modules
-reports
-junit.xml
-dist
-.build-cache
-.DS_STORE
-*.iws
-logs
-*.log
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# cypress
+cypress/screenshots
+cypress/videos
+
+# next.js
+/.next
+/out
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+Thumbs.db
+
+# debug
 npm-debug.log*
+pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-lerna-debug.log*
-report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
-pids
-*.pid
-*.seed
-*.pid.lock
-lib-cov
-bower_components
-build/Release
-*.tsbuildinfo
-.npm
-.eslintcache
-.yarn-integrity
-.env
-.env.test
-.serverless/
-.yarn
-.idea
+
+# dotenv local files
+.env*.local
+
+# local folder
+local
+
+# vercel
+.vercel
+
+.idea/

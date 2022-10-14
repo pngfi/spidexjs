@@ -2,7 +2,7 @@ import {
   createTransaction,
   createMsgRevoke,
   RevokeMessages,
-} from './../../../../proto'
+} from '../../../../proto'
 
 import { Chain, Fee, Sender } from '../common'
 

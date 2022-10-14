@@ -7,7 +7,7 @@ import {
   MsgWithdrawDelegatorRewardProtoInterface,
   createTransaction,
   createTransactionWithMultipleMessages,
-} from './../../../proto'
+} from '../../../proto'
 
 import {
   createEIP712,
@@ -26,7 +26,7 @@ import {
   MsgWithdrawDelegatorRewardInterface,
   MSG_WITHDRAW_VALIDATOR_COMMISSION_TYPES,
   createMsgWithdrawValidatorCommission,
-} from './../../../eip712'
+} from '../../../eip712'
 
 import { Chain, Fee, Sender } from './common'
 

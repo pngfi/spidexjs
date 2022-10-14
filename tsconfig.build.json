@@ -1,37 +1,12 @@
 {
+  "extends": "./tsconfig.build.json",
   "compilerOptions": {
-    "target": "es2015",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "rootDir": ".",
-    "lib": [
-      "DOM",
-      "es2019",
-      "es2021",
-    ],
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "removeComments": true,
-    "composite": true,
-    "declaration": true,
-    "declarationMap": true,
-    "sourceMap": true,
-    "esModuleInterop": true,
-    "incremental": true,
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "types": [
-      "node",
-      "jest"
-    ]
+    "rootDir": "./",
+    "outDir": "./dist"
   },
-  "exclude": [
-    "node_modules",
-    "dist",
-    "**/*.test.ts",
-    "**/*.spec.ts"
+  "include": [
+    "./src1/**/*.ts"
+  ],
+  "references": [
   ]
 }

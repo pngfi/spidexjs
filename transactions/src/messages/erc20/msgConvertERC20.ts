@@ -1,7 +1,7 @@
 import {
   createMsgConvertERC20 as protoMsgConvertERC20,
   createTransaction,
-} from './../../../../proto'
+} from '../../../../proto'
 
 import {
   createEIP712,
@@ -10,7 +10,7 @@ import {
   generateTypes,
   createMsgConvertERC20,
   MSG_CONVERT_ERC20_TYPES,
-} from './../../../../eip712'
+} from '../../../../eip712'
 
 import { Chain, Fee, Sender } from '../common'
 

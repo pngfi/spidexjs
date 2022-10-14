@@ -1,7 +1,7 @@
 import {
   createMsgConvertCoin as protoMsgConvertCoin,
   createTransaction,
-} from './../../../../proto'
+} from '../../../../proto'
 
 import {
   createEIP712,
@@ -10,7 +10,7 @@ import {
   generateTypes,
   createMsgConvertCoin,
   MSG_CONVERT_COIN_TYPES,
-} from './../../../../eip712'
+} from '../../../../eip712'
 
 import { Chain, Fee, Sender } from '../common'
 

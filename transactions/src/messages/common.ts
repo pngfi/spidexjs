@@ -1,4 +1,4 @@
-import { protoTxNamespace } from './../../../proto'
+import { protoTxNamespace } from '../../../proto'
 
 export interface EIPToSign {
   types: object
