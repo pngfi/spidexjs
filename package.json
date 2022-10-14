@@ -1,10 +1,10 @@
 {
   "name": "@spidex/proto",
-  "description": "Protobuf files for EVMOS.",
-  "version": "0.1.24",
+  "description": "Protobuf files for spidex.",
+  "version": "0.1.0",
   "license": "MIT",
   "eslintIgnore": [
-    "src1/proto/**/*.ts"
+    "./**/*.ts"
   ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -34,6 +34,10 @@
     "@cosmjs/proto-signing": "^0.28.13",
     "@metamask/eth-sig-util": "^4.0.1",
     "cosmjs-types": "^0.5.1",
+    "ts-jest": "^27.0.5",
+    "jest": "^27.5.1",
+    "jest-junit": "^13.0.0",
+    "lerna": "^5.6.1",
     "long": "^5.2.0",
     "bech32": "^2.0.0",
     "crypto-addr-codec": "^0.1.7",
