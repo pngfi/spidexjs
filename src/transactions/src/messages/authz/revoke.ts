@@ -19,7 +19,7 @@ export function createTxMsgStakeRevokeAuthorization(
   params: MsgStakeRevokeAuthorizationParams,
 ) {
   // EIP712
-  // This is blocked until EvmosV7 is released with the eip712 any messages fixes!
+  // This is blocked untilV7 is released with the eip712 any messages fixes!
 
   // Cosmos
   const msgCosmos = createMsgRevoke(

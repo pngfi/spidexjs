@@ -24,7 +24,7 @@ export function createTxMsgStakeAuthorization(
   params: MsgStakeAuthorizationParams,
 ) {
   // EIP712
-  // This is blocked until EvmosV7 is released with the eip712 any messages fixes!
+  // This is blocked until  is released with the eip712 any messages fixes!
 
   // Cosmos
   const msgStakeGrant = createStakeAuthorization(

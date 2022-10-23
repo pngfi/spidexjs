@@ -1,9 +1,5 @@
 {
+  "extends": "../tsconfig.json",
   "references": [
-    {"path": "./src/address-converter/tsconfig.json"},
-    {"path": "./src/eip712/tsconfig.json"},
-    {"path": "./src/proto/tsconfig.json"},
-    {"path": "./src/provider/tsconfig.json"},
-    {"path": "./src/transactions/tsconfig.json"}
   ]
 }

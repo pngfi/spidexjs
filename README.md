@@ -14,7 +14,7 @@ NOTE: if the address had not sent any transaction to the blockchain, the pubkey 
 import { ethToSpx } from '@spidexjs/address-converter'
 import { generateEndpointAccount } from '@spidexjs/provider'
 
-const sender = 'evmos1...'
+const sender = 'spx1...'
 let destination = '0x....'
 // The address must be bech32 encoded
 if (destination.split('0x').length == 2) {

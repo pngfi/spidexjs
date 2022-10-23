@@ -78,18 +78,6 @@ export const spxToEth = (spxAddress: string) => {
   return ETH.encoder(data)
 }
 
-// export const EVMOS = bech32Chain('EVMOS', 'evmos')
-//
-// export const ethToEvmos = (ethAddress: string) => {
-//   const data = ETH.decoder(ethAddress)
-//   return EVMOS.encoder(data)
-// }
-//
-// export const evmosToEth = (evmosAddress: string) => {
-//   const data = EVMOS.decoder(evmosAddress)
-//   return ETH.encoder(data)
-// }
-
 export const OSMOSIS = bech32Chain('OSMOSIS', 'osmo')
 
 export const ethToOsmosis = (ethAddress: string) => {
@@ -97,8 +85,8 @@ export const ethToOsmosis = (ethAddress: string) => {
   return OSMOSIS.encoder(data)
 }
 
-export const osmosisToEth = (evmosAddress: string) => {
-  const data = OSMOSIS.decoder(evmosAddress)
+export const osmosisToEth = (address: string) => {
+  const data = OSMOSIS.decoder(address)
   return ETH.encoder(data)
 }
 
@@ -109,8 +97,8 @@ export const ethToCosmos = (ethAddress: string) => {
   return COSMOS.encoder(data)
 }
 
-export const cosmosToEth = (evmosAddress: string) => {
-  const data = COSMOS.decoder(evmosAddress)
+export const cosmosToEth = (Address: string) => {
+  const data = COSMOS.decoder(Address)
   return ETH.encoder(data)
 }
 

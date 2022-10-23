@@ -56,7 +56,7 @@ export function createSignerInfo(
 ) {
   let pubkey: MessageGenerated
 
-  // NOTE: secp256k1 is going to be removed from spidex
+  // NOTE: secp256k1 is going to be removed from evmos
   if (algo === 'secp256k1') {
     pubkey = {
       message: new secp.cosmos.crypto.secp256k1.PubKey({

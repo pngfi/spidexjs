@@ -61,7 +61,7 @@ export function createMessageSend(
     fee.amount,
     fee.denom,
     parseInt(fee.gas, 10),
-    'ethsecp256',
+    'ethsecp256k1',
     sender.pubkey,
     sender.sequence,
     sender.accountNumber,
