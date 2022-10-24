@@ -2,6 +2,12 @@
 
 # dependencies
 /node_modules
+/packages/address-converter/node_modules
+/packages/eip712/node_modules
+/packages/proto/node_modules
+/packages/provider/node_modules
+/packages/spidex/node_modules
+/packages/transactions/node_modules
 /.pnp
 .pnp.js
 

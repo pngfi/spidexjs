@@ -1,3 +1,0 @@
-# spidexjs
-
-Main package
