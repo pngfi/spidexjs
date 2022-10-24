@@ -21,7 +21,7 @@
     "link-module-alias": "^1.2.0",
     "shx": "^0.3.4"
   },
-  "gitHead": "3837232ee7a29347f83390d4c0dc6a58d3484783",
+  "gitHead": "1d83c037fa6da7b8ca3e10b8e17be717a4657aa1",
   "publishConfig": {
     "access": "public"
   }
