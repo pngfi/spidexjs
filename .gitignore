@@ -40,3 +40,4 @@ local
 .vercel
 
 .idea/
+dist/
