@@ -1,7 +1,7 @@
 {
   "name": "@spidex/proto",
   "description": "Protobuf files for spidex.",
-  "version": "0.1.24",
+  "version": "0.1.0",
   "license": "MIT",
   "eslintIgnore": [
     "src/proto/**/*.ts"
@@ -29,7 +29,7 @@
     "sha3": "^2.1.4",
     "shx": "^0.3.4"
   },
-  "gitHead": "3fda8962dabc1e51de9f18abd5def3ead5ddb2dd",
+  "gitHead": "add902197adc554d6254a6520d173151126a30e7",
   "publishConfig": {
     "access": "public"
   }

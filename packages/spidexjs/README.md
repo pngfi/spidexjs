@@ -1,3 +1,3 @@
-# Evmosjs
+# spidexjs
 
 Main package

@@ -1,3 +1,3 @@
 # Transactions
 
-Transactions generator for EVMOS.
+Transactions generator for spidex.
