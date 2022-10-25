@@ -4,13 +4,13 @@ import commonjs from 'rollup-plugin-commonjs' // commonjs模块转换插件
 import json from "@rollup/plugin-json";
 import {terser} from 'rollup-plugin-terser';
 import babel from "rollup-plugin-babel";
-import resolve from '@rollup/plugin-node-resolve';
-// import uglify from 'rollup-plugin-uglify'
+import nodeResolve from 'rollup-plugin-node-resolve';
 
 // plugins基础配置
 const plugins = [
+
+  nodeResolve({ preferBuiltins: false }),
   commonjs(),
-  json(),
   babel({exclude: "**/node_modules/**", runtimeHelpers: true}),
   ts(
     {
@@ -18,7 +18,8 @@ const plugins = [
     }
   ),
   terser(),
-  resolve(),
+  json(),
+
 ]
 
 // 需要导出的模块类型
