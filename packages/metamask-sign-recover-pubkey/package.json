@@ -1,7 +1,7 @@
 {
   "name": "@spidexjs/metamask-sign-recover-pubkey",
   "description": "recover public key by metamask signature.",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "license": "MIT",
   "homepage": "https://github.com/pngfi/spidexjs",
   "main": "dist/index.js",
@@ -19,7 +19,7 @@
   "dependencies": {
     "@ethersproject/providers": "^5.6.8",
     "@hanchon/signature-to-pubkey": "^1.0.1",
-    "@types/node": "^18.11.3",
+    "@types/node": "^18.11.5",
     "crypto-addr-codec": "^0.1.7"
   },
   "gitHead": "1d83c037fa6da7b8ca3e10b8e17be717a4657aa1",
