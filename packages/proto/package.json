@@ -2,6 +2,7 @@
   "name": "@spidexjs/proto",
   "description": "Protobuf files for spidex.",
   "version": "0.1.1",
+  "homepage": "https://github.com/pngfi/spidexjs",
   "license": "MIT",
   "eslintIgnore": [
     "src/proto/**/*.ts"

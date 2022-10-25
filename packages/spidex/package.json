@@ -1,8 +1,9 @@
 {
   "name": "@spidexjs/spidex",
   "description": "JS and TS libs for spidex",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
+  "homepage": "https://github.com/pngfi/spidexjs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "module": "dist/index.esm.js",

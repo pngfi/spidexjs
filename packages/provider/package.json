@@ -3,6 +3,7 @@
   "description": "Simple provider to query the spidex rest api.",
   "version": "0.1.1",
   "license": "MIT",
+  "homepage": "https://github.com/pngfi/spidexjs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "module": "dist/index.esm.js",

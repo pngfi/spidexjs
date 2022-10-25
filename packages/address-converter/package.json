@@ -2,6 +2,7 @@
   "name": "@spidexjs/address-converter",
   "description": "Address converter, convert ETH address to Ethermint/spidex address.",
   "version": "0.1.2",
+  "homepage": "https://github.com/pngfi/spidexjs",
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
