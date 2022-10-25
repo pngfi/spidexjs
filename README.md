@@ -30,6 +30,15 @@ JS and TS libs for spidex
 
 ## Example
 
+### Get pubkey by metamask signature
+```ts
+import {getPubkey} from "@spidexjs/metamask-sign-recover-pubkey";
+
+const pubkey = await getPubkey(account.address);
+console.log(pubkey);
+// AiJbGH7xjbW7PoDClLDb3On9YgiWXQMq2cHIA1v4lfPj
+```
+
 ### Get account information
 
 Get the account number, sequence and pubkey from an address.
