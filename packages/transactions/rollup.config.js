@@ -19,7 +19,7 @@ const plugins =[
         exclude: 'node_modules/**',
       }
     ),
-    terser
+  terser()
 ]
 
 // 需要导出的模块类型

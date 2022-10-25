@@ -1,6 +1,6 @@
 # Address converter
 
-A simple converter between `ETH` address and `Ethermint`/`evmos` addresses.
+A simple converter between `ETH` address and `Ethermint`/`spidex` addresses.
 
 ## Installation
 
@@ -53,10 +53,10 @@ address = ETHERMINT.encoder(
 ```ts
 import { ethToSpidex, spidexToEth } from '@spidexjs/address-converter'
 
-let address = ethToSpidex('0x14574a6DFF2Ddf9e07828b4345d3040919AF5652')
+let address = ethToSpidex('0x1eb6169BD471ef45A1805f34A135eBd38EdF98eC')
 // "evmos1z3t55m0l9h0eupuz3dp5t5cypyv674jj7mz2jw"
 
-let address = spidexToEth('evmos1z3t55m0l9h0eupuz3dp5t5cypyv674jj7mz2jw')
+let address = spidexToEth('0x1eb6169BD471ef45A1805f34A135eBd38EdF98eC')
 // "0x14574a6DFF2Ddf9e07828b4345d3040919AF5652"
 ```
 

@@ -11,6 +11,8 @@ Get the account number, sequence and pubkey from an address.
 NOTE: if the address had not sent any transaction to the blockchain, the pubkey value are going to be empty.
 
 ```ts
+
+//ethTospx | spxToEth
 import { ethToSpx } from '@spidexjs/address-converter'
 import { generateEndpointAccount } from '@spidexjs/provider'
 

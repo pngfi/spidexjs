@@ -4,7 +4,7 @@ EIP712 transactions creator.
 
 # Installation
 
-- `yarn add @evmos/evmosjs`
+- `yarn add @spidexjs/spidex`
 
 # Example
 
