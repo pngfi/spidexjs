@@ -4,7 +4,7 @@ import commonjs from 'rollup-plugin-commonjs' // commonjs模块转换插件
 import ts from 'rollup-plugin-typescript2'
 import json from "@rollup/plugin-json";
 import { terser } from 'rollup-plugin-terser';
-import { nodeResolve } from '@rollup/plugin-node-resolve'
+import {nodeResolve} from '@rollup/plugin-node-resolve'
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 
 const isProd = process.env.NODE_ENV === 'production';
