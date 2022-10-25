@@ -2,6 +2,31 @@
 spidexjs
 
 JS and TS libs for spidex
+```
+// addressConverter
+import * as addressConverter from '@spidexjs/address-converter'
+
+// EIP712 transactions creator.
+import * as eip712 from '@spidexjs/eip712'
+
+// create message for grpc proto
+import * as proto from '@spidexjs/proto'
+
+// provider to query the spidex rest api.
+import * as provider from '@spidexjs/provider'
+
+// Transactions generator for spidex.
+import * as transactions from '@spidexjs/transactions'
+
+// create ibc / convert tx between cosmos and spidex
+import * as bridge from '@spidexjs/bridge'
+
+or
+
+import { addressConverter, eip712, proto, provider, transactions } from '@spidexjs/spidex'
+
+
+```
 
 ## Example
 
