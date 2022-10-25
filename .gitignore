@@ -8,6 +8,8 @@
 /packages/provider/node_modules
 /packages/spidex/node_modules
 /packages/transactions/node_modules
+/packages/bridge/node_modules
+/packages/metamask-sign-recover-pubkey/node_modules
 /.pnp
 .pnp.js
 
