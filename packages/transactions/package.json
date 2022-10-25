@@ -1,7 +1,7 @@
 {
   "name": "@spidexjs/transactions",
   "description": "Transactions generator for spidex",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -16,8 +16,8 @@
     "build": "rm -rf ./dist && rollup -c"
   },
   "dependencies": {
-    "@spidexjs/eip712": "^0.1.0",
-    "@spidexjs/proto": "^0.1.0",
+    "@spidexjs/eip712": "^0.1.1",
+    "@spidexjs/proto": "^0.1.1",
     "@types/node": "^17.0.21",
     "link-module-alias": "^1.2.0",
     "shx": "^0.3.4"
