@@ -1338,29 +1338,6 @@
     "@ethersproject/properties" "^5.7.0"
     "@ethersproject/strings" "^5.7.0"
 
-"@evmos/address-converter@^0.1.8":
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/@evmos/address-converter/-/address-converter-0.1.8.tgz#1e322f22ca0d2f37d5c551a05a06b2f15ab80f74"
-  integrity sha512-qHCIrQFoWcH/F4LJlsY31USdyzwnZ1VOTqVNN/TtZ8KLul7L7unxFzlKFAN7OdYnfdXrmWOj9mBnAqWxEU5c6Q==
-  dependencies:
-    bech32 "^2.0.0"
-    crypto-addr-codec "^0.1.7"
-    link-module-alias "^1.2.0"
-    shx "^0.3.4"
-
-"@evmos/eip712@^0.2.8":
-  version "0.2.8"
-  resolved "https://registry.yarnpkg.com/@evmos/eip712/-/eip712-0.2.8.tgz#a62b02468b1184e67516625fbdcef73eea5c2292"
-  integrity sha512-B4ZEIR/ESE4wGg9REMk6i3RegYRWDDF2aXUbBtDHm4u7FfOZ3Y3jGRDi5+IjaVY/WUQLhDCWIyxYl5kOyDc7lA==
-  dependencies:
-    "@cosmjs/proto-signing" "^0.28.13"
-    "@evmos/proto" "^0.1.24"
-    "@metamask/eth-sig-util" "^4.0.1"
-    cosmjs-types "^0.5.1"
-    link-module-alias "^1.2.0"
-    long "^5.2.0"
-    shx "^0.3.4"
-
 "@evmos/proto@^0.1.24":
   version "0.1.24"
   resolved "https://registry.yarnpkg.com/@evmos/proto/-/proto-0.1.24.tgz#11b84a1eed38e823c11b52db0307949c8c51b806"
@@ -1371,17 +1348,6 @@
     google-protobuf "^3.19.4"
     link-module-alias "^1.2.0"
     sha3 "^2.1.4"
-    shx "^0.3.4"
-
-"@evmos/transactions@^0.2.10":
-  version "0.2.10"
-  resolved "https://registry.yarnpkg.com/@evmos/transactions/-/transactions-0.2.10.tgz#03b5335e38d7225e3877de371c32eb1bc651639f"
-  integrity sha512-g9oBV2nOumtAbLFAxh0jqNdR0YTgPtBHRlWBCjZyN28RlZTaoC2geO5f+SKWJwyJcu24lnxCYVvHiiCkbVifPA==
-  dependencies:
-    "@evmos/eip712" "^0.2.8"
-    "@evmos/proto" "^0.1.24"
-    "@types/node" "^17.0.21"
-    link-module-alias "^1.2.0"
     shx "^0.3.4"
 
 "@gar/promisify@^1.1.3":

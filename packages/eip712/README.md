@@ -18,7 +18,7 @@ import {
   generateTypes,
   createMsgSend,
   MSG_SEND_TYPES,
-} from '@evmos/evmosjs/packages/eip712'
+} from '@spidexjs/packages/eip712'
 
 let fee = generateFee(
   '20',
