@@ -17,6 +17,16 @@ ethereum
 
 ![img_1.png](img_1.png)img_1.png
 
+## example
+```ts
+import {getPubkey} from "@spidexjs/metamask-sign-recover-pubkey";
+
+const pubkey = await getPubkey(account.address);
+console.log(pubkey);
+// AiJbGH7xjbW7PoDClLDb3On9YgiWXQMq2cHIA1v4lfPj
+
+```
+
 ```ts
   const {ethereum}: any = window;
  
