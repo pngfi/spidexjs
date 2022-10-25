@@ -2,7 +2,8 @@
 spidexjs
 
 JS and TS libs for spidex
-```
+
+```ts
 // addressConverter
 import * as addressConverter from '@spidexjs/address-converter'
 
@@ -18,7 +19,7 @@ import * as provider from '@spidexjs/provider'
 // Transactions generator for spidex.
 import * as transactions from '@spidexjs/transactions'
 
-// create ibc / convert tx between cosmos and spidex
+// transfer contract/ ibc / convert  between cosmos and spidex
 import * as bridge from '@spidexjs/bridge'
 
 or
