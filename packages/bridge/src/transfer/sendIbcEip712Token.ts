@@ -7,18 +7,12 @@
 
 
 import {spxToEth} from "@spidexjs/address-converter";
-import {getPubkey} from "@spidexjs/metamask-sign-recover-pubkey";
 import {createTxIBCMsgTransfer, signatureToWeb3Extension,createTxRawEIP712} from '@spidexjs/transactions';
 
 import {chain} from "../types/common";
 import {DecimalUtil} from "../utils/decimal";
 import {broadcastPost,getTxSendResponse,getHeight} from "../rest";
-import { isMetaMaskInstalled} from "../extension/metaMask"
-
-
-type account = {
-  address: string
-}
+import { isMetaMaskInstalled } from "../extension/metaMask"
 
 export interface Sender {
   accountAddress: string
@@ -32,7 +26,7 @@ export const sendIbcEip712Token = async (
   spxEvmChainId: number,
   sender:Sender,
   ibcDenom:string,
-  account: account,
+  pubkey: string,
   asset: string,
   fromRest:string,
   targetRest:string,
@@ -55,7 +49,7 @@ export const sendIbcEip712Token = async (
     sender = {
       ...sender,
       sequence: sender.sequence,
-      pubkey: sender.pubkey ? sender.pubkey : await getPubkey(account.address)
+      pubkey: sender.pubkey ? sender.pubkey : pubkey
     }
 
     // console.log('sender', sender);
