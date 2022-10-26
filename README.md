@@ -2,12 +2,12 @@
 
 JS and TS libs for spidex
 
-####install
+### install
 ```ts
  yarn add "@spidexjs/spidex"
 ```
 
-####useage
+### useage
 
 ```ts
     // addressConverter
