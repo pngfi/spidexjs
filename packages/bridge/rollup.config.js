@@ -5,11 +5,10 @@ import json from "@rollup/plugin-json";
 import {terser} from 'rollup-plugin-terser';
 import babel from "rollup-plugin-babel";
 import nodeResolve from 'rollup-plugin-node-resolve';
-// import uglify from 'rollup-plugin-uglify'
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 const isProd = process.env.NODE_ENV === 'production';
 
-// plugins基础配置
+
 const plugins = [
   peerDepsExternal({ includeDependencies: !isProd }),
   nodeResolve({ preferBuiltins: false }),
@@ -28,17 +27,16 @@ const plugins = [
 
 ]
 
-// 需要导出的模块类型
 const output = function (fileName) {
   return [
     {
-      file: pkg.main, // 通用模块
+      file: pkg.main,
       format: 'cjs',
       exports: 'named',
       sourcemap: true,
     },
     {
-      file: pkg.main,// es6模块
+      file: 'dist/index.esm.js',
       format: 'esm',
       exports: 'named',
       sourcemap: true,

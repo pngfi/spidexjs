@@ -36,7 +36,7 @@ const output = function (fileName) {
       sourcemap: true,
     },
     {
-      file: pkg.main,// es6模块
+      file: 'dist/index.esm.js',// es6模块
       format: 'esm',
       exports: 'named',
       sourcemap: true,
