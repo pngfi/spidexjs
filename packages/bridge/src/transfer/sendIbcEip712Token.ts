@@ -91,5 +91,5 @@ export const sendIbcEip712Token = async (
     return result;
   }
 
-  throw new Error("Metamask is installed")
+  throw new Error("Metamask is not installed")
 }

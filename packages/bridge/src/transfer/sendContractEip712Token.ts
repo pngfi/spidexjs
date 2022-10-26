@@ -30,8 +30,8 @@ export const sendContractEip712Token = async (
             return reject(error.message || error.toString())
           }
         })
-      .then(function (receipt: any) { //监听后续的交易情况
-        console.log("交易状态：", receipt.status, 'receipt:', receipt)
+      .then(function (receipt: any) { //listener
+        console.log("status：", receipt.status, 'receipt:', receipt)
         return resolve(receipt)
       })
       .catch((err: any) => {
