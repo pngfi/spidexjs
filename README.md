@@ -2,52 +2,17 @@
 
 JS and TS libs for spidex
 
-### install
-```ts
+### Installation
+```
  yarn add "@spidexjs/spidex"
 ```
 
 ### useage
 
-```ts
-    // addressConverter
-    import * as addressConverter from '@spidexjs/address-converter'
-    
-    // EIP712 transactions creator.
-    import * as eip712 from '@spidexjs/eip712'
-    
-    // create message for grpc proto
-    import * as proto from '@spidexjs/proto'
-    
-    // provider to query the spidex rest api.
-    import * as provider from '@spidexjs/provider'
-    
-    // Transactions generator for spidex.
-    import * as transactions from '@spidexjs/transactions'
-    
-    // transfer contract/ ibc / convert  between osmosis and spidex
-    import * as bridge from '@spidexjs/bridge'
-
-    // Get pubkey by metamask signature
-    import * as signatureToPubkey from '@spidexjs/metamask-sign-recover-pubkey'
-   
-
-```
-
-## Example
-
-#### use keplr to send Ibc token
-
-https://github.com/pngfi/spidexjs/blob/main/packages/bridge/src/transfer/sendIbcToken.ts
-
-#### use keplr to send convert token
-https://github.com/pngfi/spidexjs/blob/main/packages/bridge/src/transfer/sendConvertCoin.ts
-
-#### use metamask to send with contract token
-https://github.com/pngfi/spidexjs/blob/main/packages/bridge/src/transfer/sendContractEip712Token.ts
-
-#### use metamask to send Ibc token
-https://github.com/pngfi/spidexjs/blob/main/packages/bridge/src/transfer/sendIbcEip712Token.ts
+- [use keplr to send Ibc token](https://github.com/pngfi/spidexjs/blob/main/packages/bridge/src/transfer/sendIbcToken.ts)
+- [use keplr to send convert token](https://github.com/pngfi/spidexjs/blob/main/packages/bridge/src/transfer/sendConvertCoin.ts)
+- [use metamask to send with contract token](https://github.com/pngfi/spidexjs/blob/main/packages/bridge/src/transfer/sendContractEip712Token.ts)
+- [use metamask to send Ibc token](https://github.com/pngfi/spidexjs/blob/main/packages/bridge/src/transfer/sendIbcEip712Token.ts)
 
 #### Get pubkey by metamask signature
 ```ts
