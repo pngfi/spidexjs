@@ -29,7 +29,7 @@ JS and TS libs for spidex
     import * as bridge from '@spidexjs/bridge'
 
     // Get pubkey by metamask signature
-    import * as bridge from '@spidexjs/metamask-sign-recover-pubkey'
+    import * as signatureToPubkey from '@spidexjs/metamask-sign-recover-pubkey'
    
 
 ```
