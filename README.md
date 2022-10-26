@@ -33,6 +33,19 @@ JS and TS libs for spidex
 
 ## Example
 
+### use keplr to send Ibc token
+
+https://github.com/pngfi/spidexjs/blob/main/packages/bridge/src/transfer/sendIbcToken.ts
+
+### use keplr to send convert token
+https://github.com/pngfi/spidexjs/blob/main/packages/bridge/src/transfer/sendConvertCoin.ts
+
+### use metamask to send with contract token
+https://github.com/pngfi/spidexjs/blob/main/packages/bridge/src/transfer/sendContractEip712Token.ts
+
+### use metamask to send Ibc token
+https://github.com/pngfi/spidexjs/blob/main/packages/bridge/src/transfer/sendIbcEip712Token.ts
+
 ### Get pubkey by metamask signature
 ```ts
 import {getPubkey} from "@spidexjs/metamask-sign-recover-pubkey";

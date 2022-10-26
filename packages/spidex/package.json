@@ -14,7 +14,9 @@
     "~evmosjs": "dist"
   },
   "scripts": {
-    "build": "rm -rf ./dist && rollup -c"
+    "build": "rm -rf ./dist && rollup -c",
+    "build:dev": "rm -rf ./dist env_type=development npm run build",
+    "build:prod": "rm -rf ./dist && env_type=production npm run build"
   },
   "dependencies": {
     "@spidexjs/address-converter": "^0.1.3",

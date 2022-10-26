@@ -4,24 +4,25 @@ import commonjs from 'rollup-plugin-commonjs' // commonjs模块转换插件
 import json from "@rollup/plugin-json";
 import {terser} from 'rollup-plugin-terser';
 import babel from "rollup-plugin-babel";
-import nodeResolve from 'rollup-plugin-node-resolve';
-import peerDepsExternal from 'rollup-plugin-peer-deps-external';
-
-const isProd = process.env.NODE_ENV === 'production';
+import resolve from '@rollup/plugin-node-resolve';
 
 // plugins基础配置
 const plugins = [
-  peerDepsExternal({ includeDependencies: !isProd }),
-  nodeResolve({ preferBuiltins: false }),
-  commonjs(),
-  babel({exclude: "**/node_modules/**", runtimeHelpers: true}),
+  json(),
+  resolve(),
+  babel({
+    exclude: 'node_modules/**', // 只编译我们的源代码
+    babelHelpers: 'bundled',
+    runtimeHelpers: true,
+  }),
   ts(
     {
       exclude: 'node_modules/**',
     }
   ),
+  commonjs(),
   terser(),
-  json(),
+
 
 ]
 
@@ -33,12 +34,14 @@ const output = function (fileName) {
       format: 'cjs',
       exports: 'named',
       sourcemap: true,
+      strict: false,
     },
     {
       file: pkg.main,// es6模块
       format: 'esm',
       exports: 'named',
       sourcemap: true,
+      strict: false,
     }
   ]
 }
