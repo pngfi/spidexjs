@@ -1,65 +1,69 @@
-# Address converter
-
-A simple converter between `ETH` address and `Ethermint`/`spidex` addresses.
+# Bridge
 
 ## Installation
 
 ```sh
-npm install @spidexjs/address-converter
+npm install @spidexjs/bridge
 ```
 
 ## Usage
 
-### Converter
-
+### transfer from spidex -> osmosis
 ```ts
-import { ethToEthermint, ethermintToEth } from '@spidexjs/address-converter'
+    
+    import {sendContractEip712Token,sendIbcEip712Token} from "@spidexjs/bridge"
+    
+    const result:any = await sendContractEip712Token(
+      OSMO_TOKEN_ADDRESS, // contract address
+      toContractAddress,  //burn contract address
+      account,
+      asset,
+    );
 
-let address = ethToEthermint('0xe2D61e49ff8a9d724CC54d338D8076F878aC6b71')
-// "ethm1uttpuj0l32whynx9f5ecmqrklpu2c6m3973048"
+    if(result && result.status){
+      const ibcResult = await sendIbcEip712Token(
+        cosmosChainId,
+        spxEvmChainId,
+        sender,
+        ibcDenom,
+        account,
+        asset,
+        fromRest,
+        targetRest,
+        recipient,
+      );
+      // todo transferSuccess(ibcResult);
+    }else{
+      // todo transferFailed(result)
+    }
 
-let address = ethermintToEth('ethm1uttpuj0l32whynx9f5ecmqrklpu2c6m3973048')
-// "0xe2D61e49ff8a9d724CC54d338D8076F878aC6b71"
 ```
 
-### Decoders
-
+### transfer from osmosis -> spidex
 ```ts
-import { ETH, ETHERMINT } from '@spidexjs/address-converter'
-let hex = ETH.decoder('0xe2D61e49ff8a9d724CC54d338D8076F878aC6b71')
-// hex.toString('hex') === "e2d61e49ff8a9d724cc54d338d8076f878ac6b71"
 
-hex = ETHERMINT.decoder('ethm1uttpuj0l32whynx9f5ecmqrklpu2c6m3973048')
-// hex.toString('hex') === "e2d61e49ff8a9d724cc54d338d8076f878ac6b71"
+    import {sendIbcToken,sendConvertToken} from "@spidexjs/bridge"
+
+    const result = await sendIbcToken(
+      chainId,
+      rpc,
+      sendAddress,
+      amount,
+      recipient,
+      denom,
+      sourceChannel
+    )
+    if( result && result.code === 0){
+      const convertResult = await sendConvertToken(
+        cosmosChainId,
+        spxEvmChainId,
+        rest,
+        amount,
+        ibcDenom,
+        recipient,
+      );
+      // todo transferSuccess(convertResult);
+    }else{
+      // todo transferFailed(result)
+    }
 ```
-
-### Encoders
-
-```ts
-import { ETH, ETHERMINT } from '@spidexjs/address-converter'
-let address = ETH.encoder(
-  Buffer.from('e2d61e49ff8a9d724cc54d338d8076f878ac6b71', 'hex'),
-)
-// address === "0xe2D61e49ff8a9d724CC54d338D8076F878aC6b71"
-
-address = ETHERMINT.encoder(
-  Buffer.from('e2d61e49ff8a9d724cc54d338d8076f878ac6b71', 'hex'),
-)
-// address === "ethm1uttpuj0l32whynx9f5ecmqrklpu2c6m3973048"
-```
-
-### Spidex support
-
-```ts
-import { ethToSpidex, spidexToEth } from '@spidexjs/address-converter'
-
-let address = ethToSpidex('0x1eb6169BD471ef45A1805f34A135eBd38EdF98eC')
-// "evmos1z3t55m0l9h0eupuz3dp5t5cypyv674jj7mz2jw"
-
-let address = spidexToEth('0x1eb6169BD471ef45A1805f34A135eBd38EdF98eC')
-// "0x14574a6DFF2Ddf9e07828b4345d3040919AF5652"
-```
-
-## Reference
-
-- [ENSDOMAINS-AddressEnconder](https://github.com/ensdomains/address-encoder)

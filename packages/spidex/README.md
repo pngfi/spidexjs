@@ -2,5 +2,5 @@
 
 Main package
 ```ts
-import { addressConverter, eip712, proto, provider, transactions } from '@spidexjs/spidex'
+import { addressConverter, eip712, proto, provider, transactions,signatureToPubkey, bridge} from '@spidexjs/spidex'
 

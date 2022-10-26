@@ -20,10 +20,13 @@ JS and TS libs for spidex
     
     // transfer contract/ ibc / convert  between osmosis and spidex
     import * as bridge from '@spidexjs/bridge'
+
+    // Get pubkey by metamask signature
+    import * as bridge from '@spidexjs/metamask-sign-recover-pubkey'
     
     or
     
-    import { addressConverter, eip712, proto, provider, transactions } from '@spidexjs/spidex'
+    import { addressConverter, eip712, proto, provider, transactions,signatureToPubkey, bridge} from '@spidexjs/spidex'
     
 
 ```
