@@ -35,12 +35,12 @@ const output = function (fileName) {
       exports: 'named',
       sourcemap: true,
     },
-    {
-      file: 'dist/index.esm.js',// es6模块
-      format: 'esm',
-      exports: 'named',
-      sourcemap: true,
-    }
+    // {
+    //   file: 'dist/index.esm.js',// es6模块
+    //   format: 'esm',
+    //   exports: 'named',
+    //   sourcemap: true,
+    // }
   ]
 }
 

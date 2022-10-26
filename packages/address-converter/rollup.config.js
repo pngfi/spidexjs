@@ -29,12 +29,12 @@ const output = function (fileName) {
       exports: 'named',
       sourcemap: true,
     },
-    {
-      file: 'dist/index.esm.js',
-      format: 'esm',
-      exports: 'named',
-      sourcemap: true,
-    }
+    // {
+    //   file: 'dist/index.esm.js',
+    //   format: 'esm',
+    //   exports: 'named',
+    //   sourcemap: true,
+    // }
   ]
 }
 
