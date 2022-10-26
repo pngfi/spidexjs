@@ -3,7 +3,7 @@ import * as eip712 from '@spidexjs/eip712'
 import * as proto from '@spidexjs/proto'
 import * as provider from '@spidexjs/provider'
 import * as transactions from '@spidexjs/transactions'
-import * as signatureToPubkey from '@spidexjs/bridge'
+import * as signatureToPubkey from '@spidexjs/metamask-sign-recover-pubkey'
 import * as bridge from '@spidexjs/bridge'
 
 

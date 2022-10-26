@@ -5,7 +5,6 @@ import json from "@rollup/plugin-json";
 import {terser} from 'rollup-plugin-terser';
 import babel from "rollup-plugin-babel";
 import nodeResolve from 'rollup-plugin-node-resolve';
-// import uglify from 'rollup-plugin-uglify'
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 
 const isProd = process.env.NODE_ENV === 'production';
