@@ -2,6 +2,13 @@
 
 JS and TS libs for spidex
 
+####install
+```ts
+ yarn add "@spidexjs/spidex"
+```
+
+####useage
+
 ```ts
     // addressConverter
     import * as addressConverter from '@spidexjs/address-converter'
@@ -23,30 +30,26 @@ JS and TS libs for spidex
 
     // Get pubkey by metamask signature
     import * as bridge from '@spidexjs/metamask-sign-recover-pubkey'
-    
-    or
-    
-    import { addressConverter, eip712, proto, provider, transactions,signatureToPubkey, bridge} from '@spidexjs/spidex'
-    
+   
 
 ```
 
 ## Example
 
-### use keplr to send Ibc token
+#### use keplr to send Ibc token
 
 https://github.com/pngfi/spidexjs/blob/main/packages/bridge/src/transfer/sendIbcToken.ts
 
-### use keplr to send convert token
+#### use keplr to send convert token
 https://github.com/pngfi/spidexjs/blob/main/packages/bridge/src/transfer/sendConvertCoin.ts
 
-### use metamask to send with contract token
+#### use metamask to send with contract token
 https://github.com/pngfi/spidexjs/blob/main/packages/bridge/src/transfer/sendContractEip712Token.ts
 
-### use metamask to send Ibc token
+#### use metamask to send Ibc token
 https://github.com/pngfi/spidexjs/blob/main/packages/bridge/src/transfer/sendIbcEip712Token.ts
 
-### Get pubkey by metamask signature
+#### Get pubkey by metamask signature
 ```ts
 import {getPubkey} from "@spidexjs/metamask-sign-recover-pubkey";
 

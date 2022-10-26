@@ -1,6 +1,6 @@
 import pkg from './package.json'
 import ts from 'rollup-plugin-typescript2'
-import commonjs from 'rollup-plugin-commonjs' // commonjs模块转换插件
+import commonjs from 'rollup-plugin-commonjs'
 import json from "@rollup/plugin-json";
 import {terser} from 'rollup-plugin-terser';
 import babel from "rollup-plugin-babel";
@@ -10,7 +10,7 @@ import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 
 const isProd = process.env.NODE_ENV === 'production';
 
-// plugins基础配置
+
 const plugins = [
   peerDepsExternal({ includeDependencies: !isProd }),
   nodeResolve({ preferBuiltins: false }),
@@ -26,17 +26,16 @@ const plugins = [
 
 ]
 
-// 需要导出的模块类型
 const output = function (fileName) {
   return [
     {
-      file: pkg.main, // 通用模块
+      file: pkg.main,
       format: 'cjs',
       exports: 'named',
       sourcemap: true,
     },
     // {
-    //   file: 'dist/index.esm.js',// es6模块
+    //   file: 'dist/index.esm.js',
     //   format: 'esm',
     //   exports: 'named',
     //   sourcemap: true,
