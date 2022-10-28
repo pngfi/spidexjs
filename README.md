@@ -5,6 +5,13 @@ JS and TS libs for spidex
 ### Installation
 ```
  yarn add "@spidexjs/spidex"
+ or
+ yarn add "@spidexjs/address-converter"
+ yarn add "@spidexjs/eip712"
+ yarn add "@spidexjs/proto"
+ yarn add "@spidexjs/provider"
+ yarn add "@spidexjs/transactions"
+ yarn add "@spidexjs/bridge"
 ```
 
 ### useage
