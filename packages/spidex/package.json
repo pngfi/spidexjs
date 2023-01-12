@@ -1,7 +1,7 @@
 {
   "name": "@spidexjs/spidex",
   "description": "JS and TS libs for spidex",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "license": "MIT",
   "homepage": "https://github.com/pngfi/spidexjs",
   "main": "dist/index.js",
@@ -23,7 +23,7 @@
     "@spidexjs/eip712": "^0.1.7",
     "@spidexjs/proto": "^0.1.7",
     "@spidexjs/provider": "^0.1.6",
-    "@spidexjs/transactions": "^0.1.7",
+    "@spidexjs/transactions": "^0.1.8",
     "@spidexjs/metamask-sign-recover-pubkey": "^0.1.6",
     "@spidexjs/bridge": "^0.1.2",
     "@types/node": "^17.0.21",
