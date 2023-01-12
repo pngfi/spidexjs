@@ -10,7 +10,7 @@ import {
   generateTypes,
   createMsgSubmitProposal,
   MSG_VOTE_TYPES,
-} from '@spidexjs/proto'
+} from '@spidexjs/eip712'
 
 import { Chain, Fee, Sender } from '../common'
 
