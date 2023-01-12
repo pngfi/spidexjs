@@ -1,7 +1,7 @@
 {
   "name": "@spidexjs/eip712",
   "description": "EIP712 transaction creator for spidex.",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "license": "MIT",
   "homepage": "https://github.com/pngfi/spidexjs",
   "main": "dist/index.js",
